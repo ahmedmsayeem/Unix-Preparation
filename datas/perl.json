@@ -1,0 +1,23 @@
+[
+    {
+        "program": "Program 1",
+        "question": "A Perl program to print 'Hello, World!' to the console.",
+        "code": "#!/usr/bin/perl\nprint 'Hello, World!';",
+        "output": "Hello, World!",
+        "conceptual_summary": "This program demonstrates the basic 'Hello, World!' output in Perl."
+    },
+    {
+        "program": "Program 2",
+        "question": "A Perl program to calculate the sum of two numbers.",
+        "code": "#!/usr/bin/perl\nmy $num1 = 5;\nmy $num2 = 10;\nmy $sum = $num1 + $num2;\nprint 'Sum: ' . $sum;",
+        "output": "Sum: 15",
+        "conceptual_summary": "This program calculates the sum of two numbers in Perl."
+    },
+    {
+        "program": "Program 3",
+        "question": "A Perl program to read user input and display it.",
+        "code": "#!/usr/binperl\nprint 'Enter a message: ';\nmy $message = <STDIN>;\nchomp($message);\nprint 'You entered: ' . $message;",
+        "output": "Enter a message: [user enters 'Hello, Perl!']\nYou entered: Hello, Perl!",
+        "conceptual_summary": "This program reads user input and displays it in Perl."
+    }
+]

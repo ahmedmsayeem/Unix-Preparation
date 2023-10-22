@@ -1,0 +1,105 @@
+a:link{
+  text-decoration:wavy;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.row{
+    padding: 20px 60px 20px 60px ;
+   
+   
+    
+}
+.col{
+    border-radius: 20px;
+}
+
+*{
+    font-size: 0.9rem;
+   
+}
+h1,h2{
+    color: linear;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #f4ee32, #f87822,
+                #dcac10, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.card-body{
+    height: 130px;
+    text-align: center;
+    margin-top: 15px;  
+    background-color: rgba(44, 9, 9, 0); 
+    
+}
+.card-body>.card-title{
+    padding-top: 10px;
+}
+
+
+
+/* animation */
+/* Waves Animation start*/
+
+.hero_area {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+ 
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+   
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    color: orange;
+    background-color: #dcac10;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+       
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
