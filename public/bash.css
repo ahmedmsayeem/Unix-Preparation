@@ -82,6 +82,22 @@ h3 {
     text-decoration: underline;
 }
 
+.IDE {
+    margin: 10px;
+    margin-left: 5px;
+    margin-top: 50px;
+    text-align: center;
+    color: orange;
+    transition: color ease-in-out 0.3s;
+    font-size: 1.2rem;
+       
+}
+.IDE:hover{
+    color: rgb(255, 234, 0);
+    transition: color ease-in-out 0.3s;
+    
+}
+
 /* Styles for mobile screens */
 @media (max-width: 600px) {
     .program-widget {
@@ -128,6 +144,9 @@ h3 {
     h3 {
         font-size: 16px;
     }
+        .prgout>a {
+            margin-left: 10px;
+        }
 }
 
 /* Styles for tablet screens */
@@ -168,4 +187,5 @@ h3 {
     h3 {
         font-size: 20px;
     }
+        
 }

@@ -7,9 +7,21 @@ a:hover{
 
 .row{
     padding: 20px 60px 20px 60px ;
+    margin-top: 100px;
+    position: relative;
+        bottom: -50px;
    
    
     
+}
+@media (max-width: 670px){
+.row {
+        padding: 0px 60px 30px 60px;
+        position: relative;
+        bottom: 10px;
+    }
+
+
 }
 .col{
     border-radius: 20px;
@@ -32,7 +44,8 @@ h1,h2{
     height: 130px;
     text-align: center;
     margin-top: 15px;  
-    background-color: rgba(44, 9, 9, 0); 
+    background-color: rgba(44, 9, 9, 0);
+  
     
 }
 .card-body>.card-title{
