@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h3><a href="https://unix-prepbysayeem.onrender.com">Back Home</a></h3>
+    <h3><a href="http://localhost:3000">Back Home</a></h3>
     <% for(each of data ) { %>
         <div class="program-widget" id="widget<%= i++ %>">
             <h2>
@@ -22,7 +22,7 @@
                 <%= each.question %>
             </p>
             <span class="material-symbols-outlined" id="copyButton" title="copy!">
-                content_copy
+                content_copy    
             </span>
             <div class="prgout" id="prgout">  
             <pre class="solution" id="solution"><code  id="textToCopy"><%= each.code %></code></pre>  
@@ -35,6 +35,7 @@
             <p>
                 <%= each.conceptual_summary %>
             </p></div>
+        <!-- <h2 class="IDE">  <a class="IDE" target="_blank"  style="text-align: center;"  href="https://www.jdoodle.com/test-bash-shell-script-online">Practice on IDE</a></h2> -->
         </div>
     
         <% } %>
