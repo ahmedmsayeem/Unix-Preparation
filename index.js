@@ -27,6 +27,11 @@ app.get("/bash",(req,res)=>{
 
     res.render("bash.ejs", { data: jsonData,i });
 });
+app.get("/info", (req, res) => {
+    
+
+    res.render("info.ejs");
+});
 app.get("/perl", (req, res) => {
  let i=1;
   const jsonData2=JSON.parse(fs.readFileSync("datas/perl.json","utf-8"));
