@@ -97,6 +97,23 @@ h3 {
     transition: color ease-in-out 0.3s;
     
 }
+a {
+    margin: 10px;
+    margin-left: 5px;
+    margin-top: 50px;
+    text-align: center;
+    color: orange;
+    transition: color ease-in-out 0.3s;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+a:hover {
+    color: rgb(255, 234, 0);
+    transition: color ease-in-out 0.3s;
+
+}
 
 /* Styles for mobile screens */
 @media (max-width: 600px) {
