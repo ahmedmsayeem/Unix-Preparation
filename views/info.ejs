@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script in windows</title>
+    <link rel="stylesheet" href="/public/bash.css">
+</head>
+<style>
+
+    * {
+    color: white;
+    font-size: 1rem;
+}
+
+body {
+    background-color: black;
+}
+.program-widget {
+    background-color: rgba(137, 132, 132, 0.41);
+    padding: 2%;
+    margin: 25px;
+    border-radius: 5px;
+}
+.output {
+    background-color: black;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+a {
+    margin: 10px;
+    margin-left: 5px;
+    margin-top: 50px;
+    text-align: center;
+   color: orange;
+       
+    transition: color ease-in-out 0.3s;
+    font-size: 1.2rem;
+    font-weight: 600;
+       
+}
+a:hover{
+    color: rgb(255, 234, 0);
+    transition: color ease-in-out 0.3s;
+    
+}
+</style>
+<body>
+<h3><a href="http://localhost:3000">Back Home</a></h3>
+        <div class="program-widget" id="widget">
+            <h1 style="font-size: 1.5rem;">
+               How can windows users practice scripting...
+            </h1>
+            <p>
+               well, there are 2 ways
+            </p><div class="output">
+                  <p style="font-size: 1.2rem; font-weight: 900;"> 1. Cygwin  (easier one)</p>
+                  <ul><li>Cygwin is a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows.</li>
+                <li>You can install Cygwin and use its terminal to run Bash scripts.</li>
+            </ul>
+            <a href="https://www.cygwin.com/">official site</a>
+            <br>
+            <a href="https://youtu.be/Bgtty7nNu08?si=bFCM9TLJBypNDbfp">Youtube</a>
+                </div>
+
+
+            <div class="output">
+                <p style="font-size: 1.2rem; font-weight: 800;">2. Windows Subsystem for Linux (WSL)</p>
+                <ul><li>Windows 10 and later versions support the Windows Subsystem for Linux (WSL). WSL allows you to run a Linux distribution
+                    alongside your Windows installation</li>
+                </ul>
+                <a href="https://www.geeksforgeeks.org/use-bash-shell-natively-windows-10/">geeksforgeeks</a>
+                <br>
+                <a href="https://youtu.be/vL3Yy4rtLjE?si=lUZoUuaXGUOFm0g-">Youtube</a>
+            </div>
+            </div>
+            
+            <!-- <h2 class="IDE">  <a class="IDE" target="_blank"  style="text-align: center;"  href="https://www.jdoodle.com/test-bash-shell-script-online">Practice on IDE</a></h2> -->
+        </div>
+    
+        
+
+</body>
+</html>
