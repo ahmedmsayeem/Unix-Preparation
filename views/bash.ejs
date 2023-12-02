@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bash scripts</title>
+    <title>Document</title>
     <link rel="stylesheet" href="bash.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-</head>
+    <link rel="stylesheet"   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
+</head> -->
 <body>
 
-    <h3><a href="https://unix-prepbysayeem.onrender.com/">Back Home</a></h3>
-    <% for(each of data ) { %>
+    <h3><a href="http://localhost:3000">Back Home</a></h3>
+    <% for( let item of data ) { %>
         <div class="program-widget" id="widget<%= i++ %>">
             <h2>
-                <%= each.program %>
+                <%= item.program %>
             </h2>
             <p>
-                <%= each.question %>
+                <%= item.question %>
             </p>
             <span class="material-symbols-outlined" id="copyButton" title="copy!">
                 content_copy    
             </span>
             <div class="prgout" id="prgout">  
-            <pre class="solution" id="solution"><code  id="textToCopy"><%= each.code %></code></pre>  
+            <pre class="solution" id="solution"><code  id="textToCopy" ><%= item.code %></code></pre>  
             <div class="output">
             <p>Output:</p>
-            <pre ><code><%= each.output %></code></pre>
+            <pre ><code><%= item.output %></code></pre>
             </div> </div>
             <div class="Summary">
             <p >Conceptual Summary:</p>
             <p>
-                <%= each.conceptual_summary %>
-            </p></div>
+                <%= item.conceptual_summary %>
+            </p>
+        <a href="https://replit.com/">
+        <h3 style="color: rgb(0, 128, 255); text-align: center; font-size: 1.1rem;" >IDE for Practice</h3>
+        </a></div>
         <!-- <h2 class="IDE">  <a class="IDE" target="_blank"  style="text-align: center;"  href="https://www.jdoodle.com/test-bash-shell-script-online">Practice on IDE</a></h2> -->
         </div>
     
@@ -72,7 +74,12 @@
 
 
         </script>
+       
+       
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script> -->
 </body>
+
 
 
 </html>
