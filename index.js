@@ -87,7 +87,7 @@ const jsonData =
             "program": "Program 5",
             "lang": "lannguage-bash",
             "question": "Design a Shell Program that takes any number of arguments and prints them in the same order and in reverse order with suitable messages.",
-            "code": "#!/bin/sh\n\nif [ $# -eq 0 ]; then\n    echo \"No arguments\"\nelse\n    echo \"Number of arguments: $#\"\n    echo \"The input arguments are\"\n    num=1\n    for arg in \"\$@\"; do\n        echo \"arg$num is \$arg\"\n        num=$(expr \$num + 1)\n    done\n    echo \"Arguments in reverse order\"\n    num=\$#\n    while [ \$num -ne 0 ]; do\n        eval \"echo arg\$num is \$$num\"\n        num=$(expr \$num - 1)\n    done\nfi",
+            "code": "#!/bin/sh\n\nif [ $# -eq 0 ]; then\necho \"no arguments\"\nelse\necho \"Number of arguments: $#\"\necho \"Input arguments are:\"\nnum=1\nfor el in \"\$@\"; do\necho \"arg\$num is \$el\"\nnum=\$(expr \$num + 1)\ndone\necho \"Arguments in reverse order:\"\nnum=\$#\nwhile [ \$num -ne 0 ]; do\neval echo \"arg\$num is \$$num\"\nnum=\$(expr \$num - 1)\ndone\nfi",
             "output": "$ sh rev.sh A B C\nProgram name: rev.sh\nNumber of arguments: 3\nThe input arguments are\narg1 is A\narg2 is B\narg3 is C\nArguments in reverse order\narg3 is C\narg2 is B\narg1 is A",
             "conceptual_summary": "This script accepts any number of arguments and prints them in the same order and in reverse order. It showcases argument handling, counting, and reversing the order."
         },
@@ -103,7 +103,7 @@ const jsonData =
             "program": "Program 7",
             "lang": "lannguage-bash",
             "question": "For the given path names (e.g., a/b, a/b/c), design a shell script to create all the components in those path names as directories.",
-            "code": "#!/bin/sh\n\nif [ $# -ne 1 ]; then\n    echo \"No arguments\"\n    exit\nfi\ncurdir=$(pwd)\nfor dir in $(echo $1 | tr '/' ' ')\ndo\n    if [ -d $dir ]\n    then\n        echo \"$dir exists under $curdir\"\n        cd $dir\ndo\n    else\n        mkdir $dir\n        echo \"$dir created under $curdir\"\n        cd $dir\ndo\ndone\ncd $curdir",
+           "code": "#!/bin/sh\n\nif [ $# -ne 1 ]; then\necho \"no arguments\"\nexit\nfi\ncurdir=$(pwd)\nfor dir in $(echo $1 | tr '/' ' '); do\nif [ -d \"$dir\" ]; then\necho \"$dir exists under $curdir\"\ncd \"$dir\" || exit\nelse\nmkdir \"$dir\"\necho \"$dir created under $(pwd)\"\ncd \"$dir\" || exit\nfi\ndone \ncd \"$curdir\" || exit",
             "output": "$ sh a.sh a/b/v/l\na created under /home/student/Desktop\nb created under /home/student/Desktop/a\nv created under /home/student/Desktop/a/b\n1 created under /home/student/Desktop/a/b/v",
             "conceptual_summary": "This script creates directories for the given path names, such as 'a/b/c,' in a hierarchical manner. It parses the path, checks for the existence of each directory, and creates it if necessary."
         },
